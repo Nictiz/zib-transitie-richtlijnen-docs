@@ -1,0 +1,143 @@
+﻿# Project information
+site_name: Zib-transitie richtlijnen
+site_description: Richtlijnen voor de ontwikkeling en toepassing van zorginformatiebouwstenen (zibs).
+site_author: Nictiz
+site_url: https://richtlijnen.zib-transitie.nl/
+
+# Repository
+repo_url: https://github.com/nictiz/zib-transitie-richtlijnen-docs
+edit_uri: blob/main/docs/
+
+# Copyright
+copyright: >-
+  Copyright &copy; 2024 Nictiz | <a href="#__consent">Cookie-instellingen wijzigen</a> |
+  <a href="https://nictiz.nl/privacy-statement" target="_blank" rel="noopener">Privacy statement</a>
+
+# Configuration
+theme:
+  name: material
+  language: nl
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Donkere modus
+      primary: deep orange
+      accent: deep orange
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Lichte modus
+      primary: deep orange
+      accent: deep orange
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - toc.follow
+  font:
+    text: Roboto
+    code: JetBrains Mono
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: nictiz/zib-transitie-richtlijnen-docs
+      branch: main
+
+# Additional configuration
+extra:
+  consent:
+    title: Toestemming voor cookies
+    description: >-
+      We gebruiken cookies om uw herhaalde bezoeken en voorkeuren te herkennen, om de effectiviteit van onze
+      documentatie te meten en om na te gaan of gebruikers vinden wat ze zoeken. Met uw toestemming helpt u ons om onze
+      documentatie te verbeteren.
+  analytics:
+    provider: google
+    property: G-221LST60S2
+    feedback:
+      title: Was deze pagina nuttig?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Deze pagina was nuttig
+          data: 1
+          note: >-
+            Bedankt voor uw feedback!
+        - icon: material/emoticon-sad-outline
+          name: Deze pagina kan worden verbeterd
+          data: 0
+          note: >-
+            Bedankt voor uw feedback! Help ons deze pagina te verbeteren door
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpUnseBSolMcd0VHJ1Mi0ln0Lc74FA5U1Np6Fd-XIwjvNAFA/viewform?entry.816166561={url}" target="_blank" rel="noopener">ons te vertellen wat u mist</a>.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Nictiz
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/nictiz/
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: docs
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+# Page tree
+nav:
+  - Home:
+    - index.md
+    - Conventies: conventies.md
+    - Nictiz: nictiz.md
+  - Terminologie:
+    - terminologie/index.md
+    - Binding waardelijst: terminologie/binding-waardelijst.md
+    - Dynamische waardelijst: terminologie/dynamische-waardelijst.md
+    - Waardelijst in afgeleide zib: terminologie/waardelijst-in-afgeleide-zib.md
+    - Waardelijst in informatiestandaard: terminologie/waardelijst-in-informatiestandaard.md
+    - Verwerking waarden: terminologie/verwerking-waarden.md
+  - Zib-blauwdruk:
+    - zib-blauwdruk/index.md
+    - Documentatie: zib-blauwdruk/documentatie.md
+    - Gebruik: zib-blauwdruk/gebruik.md
+  - Zib-modellering:
+    - zib-modellering/index.md
+    - Kardinaliteit: zib-modellering/kardinaliteit.md
