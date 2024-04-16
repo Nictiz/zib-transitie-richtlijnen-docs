@@ -5,7 +5,7 @@ waardelijst 'required' is, mogen uitsluitend waarden uit de gedefinieerde waarde
 'extensible' is, mogen ook andere  waarden uit hetzelfde codesysteem (terminologie) als waarop de waardelijst is
 gebaseerd worden gebruikt.
 
-## TE001.001: De binding van een waardelijst ZOU 'extensible' moeten zijn
+## TE-BW.001: De binding van een waardelijst ZOU 'extensible' moeten zijn
 
 Zorgverleners moeten altijd de mogelijkheid hebben om andere waarden vast te leggen dan de waarden in de waardelijst. De
 waardelijst-binding 'extensible' maakt het mogelijk om naast de waarden in de waardelijst ook andere termen uit de
@@ -18,7 +18,7 @@ voorkeuswaarden worden gezien.
 |----------------------|-----------|
 | Zib-ontwerper        | SHOULD    |
 
-## TE001.002: ALS aanvullende termen onmiskenbaar in geen enkele zorg- of gezondheidscontext toepasbaar zijn, DAN: MAG de binding van een waardelijst 'required' zijn
+## TE-BW.002: ALS aanvullende termen onmiskenbaar in geen enkele zorg- of gezondheidscontext toepasbaar zijn, DAN: MAG de binding van een waardelijst 'required' zijn
 
 Soms is absoluut zeker dat een vaste set van waarden in alle gevallen volstaat (usecase-onafhankelijk). Alleen in die
 gevallen mag de waardelijst-binding 'required' worden gebruikt.
@@ -27,7 +27,7 @@ gevallen mag de waardelijst-binding 'required' worden gebruikt.
 |----------------------|-----------|
 | Zib-ontwerper        | MAY       |
 
-## TE001.003: ALS de waardelijst een gehele codelijst/terminologie bevat EN dynamisch is, DAN: MAG de binding van een waardelijst 'required' zijn
+## TE-BW.003: ALS de waardelijst een gehele codelijst/terminologie bevat EN dynamisch is, DAN: MAG de binding van een waardelijst 'required' zijn
 
 Wanneer een waardelijst een gehele terminologie bevat en dynamisch is, dan heeft de waardelijst-binding 'extensible'
 geen effect. Er zijn immers niet nog meer termen in de achterliggende terminologie die gebruikt kunnen worden.
@@ -36,7 +36,7 @@ geen effect. Er zijn immers niet nog meer termen in de achterliggende terminolog
 |----------------------|-----------|
 | Zib-ontwerper        | MAY       |
 
-## TE001.004: ALS de binding van een waardelijst 'required' is, DAN: MOET een waarde 'OTH' worden toegevoegd aan de waardelijst
+## TE-BW.004: ALS de binding van een waardelijst 'required' is, DAN: MOET een waarde 'OTH' worden toegevoegd aan de waardelijst
 
 Zorgverleners moeten altijd de mogelijkheid hebben om andere waarden vast te leggen dan de waarden in de waardelijst.
 Overweeg een waardelijst-binding van het type 'extensible'.
@@ -45,7 +45,7 @@ Overweeg een waardelijst-binding van het type 'extensible'.
 |----------------------|-----------|
 | Zib-ontwerper        | MUST      |
 
-## TE001.005: Systemen MOGEN de waarden van waardelijsten met een binding 'extensible' aan de eindgebruiker tonen als voorkeurstermen/startlijst
+## TE-BW.005: Systemen MOGEN de waarden van waardelijsten met een binding 'extensible' aan de eindgebruiker tonen als voorkeurstermen/startlijst
 
 De waarden in een 'extensible' waardelijst zijn bedoeld als voorkeurskeuzes. Een user interface ontwerp mag hierop
 aansluiten door een voorkeursset te tonen, naast een mogelijkheid om in de uitgebreide set (de achterliggende
