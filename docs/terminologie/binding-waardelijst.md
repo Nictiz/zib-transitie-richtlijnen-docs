@@ -18,7 +18,7 @@ voorkeuswaarden worden gezien.
 |----------------------|-----------|
 | Zib-ontwerper        | SHOULD    |
 
-## TE002.002: ALS aanvullende termen onmiskenbaar in geen enkele zorg- of gezondheidscontext toepasbaar zijn, DAN: MAG de binding van een waardelijst 'required' zijn
+## TE001.002: ALS aanvullende termen onmiskenbaar in geen enkele zorg- of gezondheidscontext toepasbaar zijn, DAN: MAG de binding van een waardelijst 'required' zijn
 
 Soms is absoluut zeker dat een vaste set van waarden in alle gevallen volstaat (usecase-onafhankelijk). Alleen in die
 gevallen mag de waardelijst-binding 'required' worden gebruikt.
