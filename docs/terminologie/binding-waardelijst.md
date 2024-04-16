@@ -1,4 +1,4 @@
-﻿# Binding waardelijst - dit is een test
+﻿# Binding waardelijst
 
 Waardelijsten worden op verschillende manieren aan een zib-element gekoppeld of 'gebonden'. Als de binding van een
 waardelijst 'required' is, mogen uitsluitend waarden uit de gedefinieerde waardelijst worden gebruikt. Als de waarde
