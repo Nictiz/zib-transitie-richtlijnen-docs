@@ -2,7 +2,7 @@
 site_name: Zib-transitie richtlijnen
 site_description: Richtlijnen voor de ontwikkeling en toepassing van zorginformatiebouwstenen (zibs).
 site_author: Nictiz
-site_url: https://richtlijnen.zib-transitie.nl/
+site_url: https://richtlijnen.zibtransitie.nl/
 
 # Repository
 repo_url: https://github.com/nictiz/zib-transitie-richtlijnen-docs

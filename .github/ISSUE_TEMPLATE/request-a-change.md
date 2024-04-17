@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Zie [CC-OO.nnn](https://richtlijnen.zib-transitie.nl/conventies/#identificatie-van-richtlijnen)
+Zie [CC-OO.nnn](https://richtlijnen.zibtransitie.nl/conventies/#identificatie-van-richtlijnen)
 Voeg hier een link toe naar relevante delen van de documentatie, bijvoorbeeld de richtlijn-code.
 
 ## Beschrijving issue
