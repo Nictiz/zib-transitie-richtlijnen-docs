@@ -73,7 +73,7 @@ extra:
       documentatie te verbeteren.
   analytics:
     provider: google
-    property: G-221LST60S2
+    property: !ENV GOOGLE_ANALYTICS_KEY
     feedback:
       title: Was deze pagina nuttig?
       ratings:
